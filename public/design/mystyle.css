@@ -1,0 +1,84 @@
+body {
+    background-color: lightblue;
+}
+
+#grad {
+    height: 90vw;
+    background-image: linear-gradient(rgb(159, 225, 247), rgb(43, 211, 223));
+}
+
+h1 {
+    color: rgb(57, 117, 185);
+}
+
+h2 {
+    color: rgb(57, 117, 185);
+}
+
+#music_card {
+    background-color: rgb(43, 41, 41);
+    border-radius: 10px;
+    width: 20vw;
+    height: 17vw;
+    padding: 5px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.5);
+    margin-top: 4vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    float: left;
+}
+
+#music_card table,
+tr,
+td {
+    border: none;
+    color: white;
+    text-align: left;
+}
+
+.add_button {
+    margin-top: 1vw;
+}
+
+#music_card button {
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.5);
+}
+
+#icon {
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+}
+
+#singer {
+    margin-top: 2vw;
+    border-radius: 10px;
+}
+
+.btn {
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.5);
+}
+
+.music_card {
+    background-color: rgb(43, 41, 41);
+    border-radius: 10px;
+    width: 20vw;
+    height: 15vw;
+    padding: 5px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.5);
+    margin-top: 4vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    float: left;
+}
+
+.text-warning:hover {
+    color: darkorange !important;
+}
+
+.text-danger:hover {
+    color: darkred !important;
+}
