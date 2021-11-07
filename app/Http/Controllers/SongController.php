@@ -31,7 +31,7 @@ class SongController extends Controller
     public function create()
     {
         //
-        $title = 'ADD Song';
+        $title = 'Song';
         $pageTitle = 'Add Song List';
         $singers = Singer::all();
         return view('createSong', compact('title', 'pageTitle', 'singers'));
@@ -79,7 +79,7 @@ class SongController extends Controller
     public function edit($id)
     {
         //
-        $title = 'Edit Song';
+        $title = 'Song';
         $pageTitle = 'Edit Song List';
         $songs = Song::findOrFail($id);
         $singers = Singer::all();

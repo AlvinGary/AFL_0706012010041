@@ -30,7 +30,7 @@ class SingerController extends Controller
     public function create()
     {
         //
-        $title = 'ADD Singer';
+        $title = 'Singer';
         $pageTitle = 'ADD Singer List';
         return view('createSinger', compact('title', 'pageTitle'));
     }
@@ -79,7 +79,7 @@ class SingerController extends Controller
     public function edit($id)
     {
         //
-        $title = 'Edit Singer';
+        $title = 'Singer';
         $pageTitle = 'Edit Singer List';
         $singers = Singer::findOrFail($id);
         return view('editSinger', compact('title', 'pageTitle', 'singers'));
@@ -95,7 +95,7 @@ class SingerController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $singers = Singer::where('singer_code', $id)->first();
+        $singers = Singer::findOrFail($id);
         $singers->update([
             'singer_code' => $id,
             'singer_name' => $request->edit_singer_name,
