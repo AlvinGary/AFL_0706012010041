@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label><b>Released:</b></label>
-                <input type="number" min="1900" max="2021" class="form-control" placeholder="Enter Song Released Year" name="edit_song_released" value="{{$songs->released}}" required>
+                <input type="number" min="1900" max="2022" class="form-control" placeholder="Enter Song Released Year" name="edit_song_released" value="{{$songs->released}}" required>
             </div>
             <div class="form-group">
                 <label><b>Song Genre:</b></label>

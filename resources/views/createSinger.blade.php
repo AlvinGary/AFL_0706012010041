@@ -17,7 +17,7 @@
             </div>
             <div class="form-group">
                 <label><b>Debut On:</b></label>
-                <input type="number" min="1900" max="2030" class="form-control" placeholder="Enter First Debut Year" name="singer_debut_on">
+                <input type="number" min="1900" max="2022" class="form-control" placeholder="Enter First Debut Year" name="singer_debut_on">
             </div>
             <div class="form-group">
                 <label><b>Origin(Place of Birth/First Debut Place):</b></label>
