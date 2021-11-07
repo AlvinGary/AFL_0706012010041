@@ -3,7 +3,7 @@ body {
 }
 
 #grad {
-    height: 90vw;
+    height: 200vw;
     background-image: linear-gradient(rgb(159, 225, 247), rgb(43, 211, 223));
 }
 
@@ -39,10 +39,6 @@ td {
 
 .add_button {
     margin-top: 1vw;
-}
-
-#music_card button {
-    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.5);
 }
 
 #icon {
