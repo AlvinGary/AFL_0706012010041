@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Singer;
+use App\Models\Song;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SongFactory extends Factory
@@ -11,10 +13,18 @@ class SongFactory extends Factory
      *
      * @return array
      */
+    protected $model = Song::class;
     public function definition()
     {
         return [
             //
+            'song_name' => $this->faker->word(),
+            'released' => $this->faker->year(),
+            'song_genre' => $this->faker->word(),
+            'singer' => function () {
+                $singers = Singer::inRandomOrder()->first();
+                return $singers->singer_code;
+            }
         ];
     }
 }

@@ -3,7 +3,7 @@ body {
 }
 
 #grad {
-    height: 200vw;
+    height: 500vw;
     background-image: linear-gradient(rgb(159, 225, 247), rgb(43, 211, 223));
 }
 
