@@ -104,7 +104,7 @@ class SingerController extends Controller
             'genre' => $request->edit_singer_genre,
             'record_label' => $request->edit_singer_record_label
         ]);
-        return redirect(route('singer.index', $id));
+        return redirect(route('singer.index'));
     }
 
     /**
