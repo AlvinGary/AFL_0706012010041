@@ -33,7 +33,7 @@
                 <td>
                     <div class="d-flex gap-2">
                         <a class="btn btn-info" href="{{ route('singer.show', $singer->singer_code)}}">Show</a>
-                        <a class="btn btn-primary" href="{{ route('singer.edit', $singer->singer_code)}}">Edit</a>
+                        <a class="btn btn-warning" href="{{ route('singer.edit', $singer->singer_code)}}">Edit</a>
                         <form action="{{route('singer.destroy', $singer->singer_code)}}" method="POST">
                             @csrf
                             @method('DELETE')

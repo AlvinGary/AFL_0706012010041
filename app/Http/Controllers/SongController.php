@@ -64,7 +64,7 @@ class SongController extends Controller
     public function show($id)
     {
         //
-        $title = 'Song Details';
+        $title = 'Song';
         $pageTitle = 'Song Details';
         $songs = Song::findOrFail($id);
         return view('showSong', compact('title', 'pageTitle', 'songs'));
